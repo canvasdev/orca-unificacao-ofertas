@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cupom - Jorlan</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12735746-15', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body>
+	
+<script>
+$(document).ready(function() {
+	dadosUser = document.cookie.split("- & -");
+	dadoUserNome = dadosUser[1];
+	dadoUserEmail = dadosUser[2];
+	dadoUserTelefone = dadosUser[3];
+	dadoUserCpf = dadosUser[4];
+	dadoUserDataEmissao = dadosUser[5];
+
+	if (dadoUserNome !== undefined) {
+		$("#dado-1").text("PARABÉNS, "+dadoUserNome);
+	};
+	$("#dado-2").text(dadoUserEmail);
+	$("#dado-3").text(dadoUserTelefone);
+	$("#dado-4").text(dadoUserCpf);
+	$("#dado-5").text(dadoUserDataEmissao);
+
+	setTimeout(function() {
+		date = new Date();
+		date.setDate(date.getDate() -1);
+		document.cookie = 'dadosUsuario'+'=;expires=' + date;
+	}, 2000);
+
+	var body = document;
+});
+</script>
+
+<style>
+body{
+  width: 100%; height: 100%; position: absolute;
+  background-color: #fff	;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#fundo{position: absolute; top: 0px; left: 0px}
+
+.campos{width: auto; height: auto; position: absolute; font-family: arial; color: #000; text-align: center; font-size: 15px;}
+
+#dado-1{width: 100%; position: absolute; font-family: arial; color: #924704; top: 16px; text-align: center; font-size: 25px;}
+#dado-2{top: 203px; left: 120px}
+#dado-3{top: 203px; left: 460px}
+#dado-4{top: 249px; left: 152px}
+#dado-5{top: 249px; left: 435px}
+
+#imprimir{width: 200px; height: 30px; position: absolute; top: 284px; left: 50%; margin-left: -100px; background-color: #92E311; border: 1px solid #000; color: #193106; font-size: 15px; cursor: pointer;}
+
+#juridico{width: 600px; height: auto; position: absolute; left: 25px; top: 505px; color: #000; font-family: arial; font-size: 10px; line-height: 11px; text-align: justify;}
+</style>
+
+<img src="img/cupom.jpg" id="fundo">
+
+<div id="dados">
+	<div id="dado-1"></div>
+	<div id="dado-2" class="campos"></div>
+	<div id="dado-3" class="campos"></div>
+	<div id="dado-4" class="campos"></div>
+	<div id="dado-5" class="campos"></div>
+</div>
+
+<button type="button" id="imprimir" onclick="window.print(body); analyticsEventListener('Imprimiu o cupom de Dotz', 'Página do cupom', 'Usuário imprimiu o cupom de Dotz. ');">IMPRIMIR MEU CUPOM</button>
+
+<div id="juridico">Para receber os DZ 100, basta apresentá-lo na recepção de uma das unidades Jorlan: Belvedere, Via Expressa ou Pedro II, em até 15 dias a partir da data de emissão do voucher. DZ 200 válido para test drive realizado de segunda a sexta, das 9hs às 17hs, nos veículos de test drive disponíveis na loja. Bônus de até DZ 10.000 varia de acordo com o modelo. Consulte mais informações na concessionária. Bônus em Dotz a ser creditado em até 30 dias após a entrega do voucher na Jorlan.</div>
+
+<!-- Google Code for LEAD Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 986231296;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "grx8CLjAggkQgOSi1gM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/986231296/?label=grx8CLjAggkQgOSi1gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html>

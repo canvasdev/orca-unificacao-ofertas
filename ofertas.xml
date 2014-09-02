@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carro id-carro="CARRO">
+	<motorizacao></motorizacao>
+	<versao></versao>
+	<ano></ano>
+	<preco-de></preco-de>
+	<preco-por></preco-por>
+	<dotz></dotz>
+	<opcionais>
+		<opc id-opc="1"></opc>
+		<opc id-opc="2"></opc>
+		<opc id-opc="3"></opc>
+		<opc id-opc="4"></opc>
+		<opc id-opc="5"></opc>
+		<opc id-opc="6"></opc>
+	</opcionais>
+	<juridico></juridico>
+<carro>

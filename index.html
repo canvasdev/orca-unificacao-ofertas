@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jorlan - Desafio Triplo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alertify.core.css">
+        <link rel="stylesheet" href="css/alertify.default.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+        <script src="js/model.js"></script>
+        <script src="js/jquery.maskedinput-1.3.js" type="text/javascript"></script>
+        <script src="js/alertify.js"></script>
+        <script src="js/moment-with-langs.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12735746-15', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+<div class="form-modal">
+    <div class="form-modal-cor"></div>
+    <div class="form-container">
+        <div id="fechar">X</div>
+        <div class="chamadaformulario">PREENCHA O FORMULÁRIO PARA<br>RECEBER MAIS INFORMAÇÕES.</div>
+        <div id="form-append">
+            <!-- Formulario veiculo -->
+        </div>
+    </div>
+</div>
+
+<div class="btn-regulamento">INSTRUÇÕES</div>
+<div class="regulamento">
+    <div class="regulamento-text">O objetivo principal do game é transportar as trigêmeas para as respectivas concessionárias, sem colidir com nenhum dos veículos nas 6 pistas. 
+Alcançando este objetivo, você recebe um voucher de DZ 100 a ser validado na concessionária. 
+Fazendo também um test drive, ganha mais DZ 200. 
+Fechando negócio com a Jorlan, ganha até DZ 10.000.</div>
+</div>
+
+<div class="trigemeas"></div>
+
+<div class="back-topo">
+    <div class="logo-game"></div>
+    <div class="slogan">Jorlan, a melhor em Chevrolet, agora em três endereços para você.</div>
+
+</div>
+<div class="jogo-container-border">
+<div id="jogo-container">
+    <div class="tela-de-carregamento">
+        <div class="tela-de-carregamento-cor"></div>
+        <div class="game-presentation">
+            <div class="game-presentation-text">Nossa família cresceu com a chegada da nova Jorlan Pedro II. Ajude as trigêmeas a chegar até o outro lado da pista e comece ganhando a partir de DZ 100. </div>
+        </div>
+        <div class="on-board-jogo">
+            <img class="setas" src="img/setas-instrucoes.svg">
+        </div>
+        <div class="on-board-text">use as setas para movimentar as trigêmeas</div>
+        <div class="enter-label">
+            <div class="enter-label-text">QUERO JOGAR!</div>
+        </div>
+    </div>
+<!--     <div class="faixa-container">
+        <div id="faixa-h-1" class="faixa-h-a"></div>
+        <div id="faixa-h-2" class="faixa-h-a"></div>
+        <div id="faixa-h-3" class="faixa-h-a"></div>
+        <div id="faixa-h-4" class="faixa-h-a"></div>
+        <div id="faixa-h-5" class="faixa-h-a"></div>
+        <div id="faixa-h-6" class="faixa-h-a"></div>
+        <div id="faixa-h-7" class="faixa-h-a"></div>
+        <div id="faixa-h-8" class="faixa-h-a"></div>
+        <div id="faixa-h-9" class="faixa-h-a"></div>
+        <div id="faixa-h-10" class="faixa-h-a"></div>
+    </div>
+    <div class="faixa-container">
+        <div id="faixa-v-1" class="faixa-v-a"></div>
+        <div id="faixa-v-2" class="faixa-v-a"></div>
+        <div id="faixa-v-3" class="faixa-v-a"></div>
+        <div id="faixa-v-4" class="faixa-v-a"></div>
+        <div id="faixa-v-5" class="faixa-v-a"></div>
+        <div id="faixa-v-6" class="faixa-v-a"></div>
+        <div id="faixa-v-7" class="faixa-v-a"></div>
+        <div id="faixa-v-8" class="faixa-v-a"></div>
+        <div id="faixa-v-9" class="faixa-v-a"></div>
+        <div id="faixa-v-10" class="faixa-v-a"></div>
+        <div id="faixa-v-11" class="faixa-v-a"></div>
+        <div id="faixa-v-12" class="faixa-v-a"></div>
+        <div id="faixa-v-13" class="faixa-v-a"></div>
+        <div id="faixa-v-14" class="faixa-v-a"></div>
+        <div id="faixa-v-15" class="faixa-v-a"></div>
+        <div id="faixa-v-16" class="faixa-v-a"></div>
+        <div id="faixa-v-17" class="faixa-v-a"></div>
+    </div> -->
+    <div class="life">
+        <div class="life-x">x</div>
+        <div class="life-number">5</div>
+    </div>
+    <div class="tempo">0</div>
+    <div class="conces conces-1">
+        <div class="conces-placa conces-placa-1"></div>
+    </div>
+    <div class="conces conces-2 conces-fechada">
+        <div class="conces-placa conces-placa-2"></div>
+    </div>
+    <div class="conces conces-3 conces-fechada">
+        <div class="conces-placa conces-placa-3"></div>
+    </div>
+    <div class="personagem pers-1 personagem-ativo">
+        <div class="aurea aurea-1 aurea-ativo"></div>
+        <div class="personagem-img pers-img-1 personagem-img-ativo"></div>
+        <div class="personagem-arrow arrow-1 personagem-arrow-ativo">
+            <img class="arrow-down" src="img/arrow-down.svg">
+        </div>
+    </div>
+    <div class="personagem pers-2">
+        <div class="aurea aurea-2"></div>
+        <div class="personagem-img pers-img-2"></div>
+        <div class="personagem-arrow arrow-2">
+            <img class="arrow-down" src="img/arrow-down.svg">
+        </div>
+    </div>
+    <div class="personagem pers-3">
+        <div class="aurea aurea-3"></div>
+        <div class="personagem-img pers-img-3"></div>
+        <div class="personagem-arrow arrow-3">
+            <img class="arrow-down" src="img/arrow-down.svg">
+        </div>
+    </div>
+    <div class="caminhao cam-1 cam-l-1">
+        <div class="caminhao-img caminhao-img-azul"></div>
+    </div>
+    <div class="caminhao cam-1 cam-l-2">
+        <div class="caminhao-img caminhao-img-roxo"></div>
+    </div>
+    <div class="caminhao cam-2 cam-l-1">
+        <div class="caminhao-img caminhao-img-laranja"></div>
+    </div>
+    <div class="caminhao cam-2 cam-l-2">
+        <div class="caminhao-img caminhao-img-verde"></div>
+    </div>
+    <div class="carro car-1 car-l-1">
+        <div class="carro-img carro-img-vermelho"></div>
+    </div>
+    <div class="carro car-1 car-l-2">
+        <div class="carro-img carro-img-rosa"></div>
+    </div>
+    <div class="carro car-1 car-l-3">
+        <div class="carro-img carro-img-amarelo"></div>
+    </div>
+    <div class="carro car-2 car-l-1">
+        <div class="carro-img carro-img-beje"></div>
+    </div>
+    <div class="carro car-2 car-l-2">
+        <div class="carro-img carro-img-amarelo"></div>
+    </div>
+    <div class="carro car-2 car-l-3">
+        <div class="carro-img carro-img-vermelho"></div>
+    </div>
+    <div class="moto mot-1 mot-l-1">
+        <div class="moto-img moto-img-verde"></div>
+    </div>
+    <div class="moto mot-1 mot-l-2">
+        <div class="moto-img moto-img-ciano"></div>
+    </div>
+    <div class="moto mot-1 mot-l-3">
+        <div class="moto-img moto-img-amarelo"></div>
+    </div>
+    <div class="moto mot-1 mot-l-4">
+        <div class="moto-img moto-img-vermelho"></div>
+    </div>
+    <div class="moto mot-2 mot-l-1">
+        <div class="moto-img moto-img-vermelho"></div>
+    </div>
+    <div class="moto mot-2 mot-l-2">
+        <div class="moto-img moto-img-amarelo"></div>
+    </div>
+    <div class="moto mot-2 mot-l-3">
+        <div class="moto-img moto-img-verde"></div>
+    </div>
+    <div class="moto mot-2 mot-l-4">
+        <div class="moto-img moto-img-ciano"></div>
+    </div>
+    <div class="alert-conces alert-conces-1">
+        <div class="alert-conces-text-1"></div>
+        <div class="alert-conces-text-2"></div>
+        <div class="alert-onboard-enter">PRESSIONE ENTER >></div>
+        <div class="alert-button jogar-novamente">JOGAR NOVAMENTE</div>
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://www.jorlan.com.br/novajorlan" target="new">
+            <div class="alert-button compartilhar-2">COMPARTILHAR</div>
+        </a>
+    </div>
+    <div class="alert-conces alert-form">
+        <form onSubmit="return validar();"  id="form" name="form" method="post" action="http://www.grupoocp.com.br/azzurra/acoesEspeciais.php"><!--Origem do lead--><input type="hidden" name="origem" id="origem" style="width:273px; color:#000" value="Hotsite" /><!---Nome do veículo--><input type="hidden" name="veiculo" id="veiculo" style="width:273px; color:#000" value="" /><!--Tipo de campanha--><input type="hidden" name="campanha" id="campanha" style="width:273px; color:#000" value="Jorlan Unificação" /><!--Opção--><input type="hidden" name="opcao" id="opcao" style="width:273px; color:#000" value="A" /><!--Link de resposta--><input type="hidden" name="linkResposta" id="linkResposta" value="http://jorlan.com.br/novajorlan/" /><input type="hidden"  name="codempresa" id="codempresa" name="codempresa" value="4" style=" height:25px; color:#999;"><div class="inputname"><input  type="text" name="nome" id="nome" size="6" maxlenght="6" placeholder="Qual é o seu nome?" style="height:25px; color:#3b1616; background-color: #CE9767"  /></div><div class="inputemail"><input  type="text" name="email" id="email" placeholder="Qual é o seu email?" style=" height:25px; color:#3b1616; background-color: #CE9767"  /></div><div class="inputtel"><input  type="text" name="telefone" class="mask-fone" id="telefone" placeholder="Qual é o seu telefone?" style=" height:25px; color:#3b1616; background-color: #CE9767"/></div><div class="inputtxtarea"><input style=" color:#3b1616; height: 25px; background-color: #CE9767" name="mensagem" class="mask-cpf" id="mensagem" placeholder="Qual é o seu CPF?"  /> </div><div class="inputall"><input name="charset" type="hidden" value="iso-8859-1" /><input type="submit" name="enviar" value="QUERO O MEU PRêMIO" class="btn" /></div></form>  
+        <div class="alert-conces-text-1 alert-conces-text-1-b"></div>
+        <div class="alert-conces-text-2 alert-conces-text-2-b"></div>
+    </div>
+</div>
+</div>
+<div id="section-ofertas">
+    <div id="ofertas-container">
+        <a href="#cruze">
+            <div class="oferta-cont" carro="cruze">
+                <div class="label-car-name">CRUZE</div>
+                <div class="oferta-img">
+                    <img class="oferta-img-tag" src="img/ofertas/cruze_min.png">
+                </div>
+            </div>
+        </a>
+        <a href="#classic">
+            <div class="oferta-cont" carro="classic">
+                <div class="label-car-name">CLASSIC</div>
+                <div class="oferta-img">
+                    <img class="oferta-img-tag" src="img/ofertas/classic_min.png">
+                </div>
+            </div>
+        </a>
+        <a href="#onix">
+            <div class="oferta-cont" carro="onix">
+                <div class="label-car-name">ONIX</div>
+                <div class="oferta-img">
+                    <img class="oferta-img-tag" src="img/ofertas/onix_min.png">
+                </div>
+            </div>
+        </a>
+        <a href="#prisma">
+            <div class="oferta-cont" carro="prisma">
+                <div class="label-car-name">PRISMA</div>
+                <div class="oferta-img">
+                    <img class="oferta-img-tag" src="img/ofertas/prisma_min.png">
+                </div>
+            </div>
+        </a>
+        <a href="#cobalt">
+            <div class="oferta-cont" carro="cobalt">
+                <div class="label-car-name">COBALT</div>
+                <div class="oferta-img">
+                    <img class="oferta-img-tag" src="img/ofertas/cobalt_min.png">
+                </div>
+            </div>
+        </a>
+        <a href="#s10">
+            <div class="oferta-cont" carro="s10">
+                <div class="label-car-name">S10</div>
+                <div class="oferta-img">
+                    <img class="oferta-img-tag" src="img/ofertas/s10_min.png">
+                </div>
+            </div>
+        </a>
+        <div class="oferta-detalhe-cont">
+            <div class="box-oferta">
+                <div class="label-info-carro">
+                    <div class="label-nome-carro"></div>
+                    <div class="label-motor-carro"></div>
+                </div>
+                <div class="label-info-carro-2">
+                    <div class="label-versao-carro"></div>
+                    <div class="label-ano-carro"></div>
+                </div>
+                <div class="foto-carro">
+                    <img src="img/ofertas/cruze_big.png" alt="cruze">
+                </div>
+                <div class="label-preco-1">
+                    <div class="label-preco-de">DE</div>
+                    <div class="label-preco-de-rs"></div>
+                </div>
+                <div class="label-preco-2">
+                    <div class="label-preco-por">POR</div>
+                    <div class="label-preco-por-rs"></div>
+                </div>
+                <div class="optional-title">OPCIONAIS INCLUSOS</div>
+                <div class="label-opcionais-container"></div>
+                <div class="dotz">
+                    <div class="dotz-text">DZ 5.000</div>
+                </div>
+                <div class="cta gradient-b">QUERO SABER MAIS</div>
+                <div class="label-juridico-carro">Cruze Sedan LT 1.8,14/14, R7A, pintura sólida, R$ 64.990,00 à vista ou pelo financiamento com entrada R$ 39.312,00 (60%) e o restante em 24 parcelas de R$ 1.109,12, com taxa de juros 0,0% a.m., e 0,0% a.a., Cet 0,12% a.m e 1,51% a.a. Valor total financiado R$ 65.930,89. Bônus 5.000 Dotz deve ser creditados em até 30 dias após a emissão da Nota Fiscal do mesmo CPF.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rodape gradient-a">
+    <div class="rodape-content">
+        <div class="endereco-container gradient-c">
+            <div class="nome-concessionaria">JORLAN BELVEDERE</div>
+            <div class="endereco-concessionaria">Em frente ao shopping</div>
+        </div>
+        <div class="endereco-container gradient-c">
+            <div class="nome-concessionaria">JORLAN VIA EXPRESSA</div>
+            <div class="endereco-concessionaria">2.100 - Coração Eucarístico</div>
+        </div>
+        <div class="endereco-container gradient-b">
+            <div class="nome-concessionaria endereco-concessionaria-b">JORLAN PEDRO II</div>
+            <div class="endereco-concessionaria endereco-concessionaria-b">1.600</div>
+        </div>
+        <div class="logo-dotz"></div>
+    </div>
+</div>
+
+        <script src="js/plugins.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/main.js"></script>
+        <script src="js/sprites.js"></script>
+
+
+
+
+<!--Form Validate ================================================== -->
+<script language=javascript>
+
+    function validar() {var valido = false;with(document.form) {if(nome.value.length == 0){valido = false;alertify.alert ('Por favor, preencha o campo nome para que possamos entrar em contato com você.');}else if(email.value.length == 0) {valido = false;alertify.alert ('Por favor, preencha o campo email para que possamos entrar em contato com você.');}
+
+    else if(codempresa.value.length == 0) {valido = false;alertify.alert ('Por favor, escolha uma concessionária.');}
+
+    else if(telefone.value.length == 0) {valido = false;alertify.alert ('Por favor, preencha o campo DDD + Telefone para que possamos entrar em contato com você.');}
+
+    else if(mensagem.value.length == 0) {valido = false;alertify.alert ('Por favor, preencha o campo CPF.');}
+
+    
+    else {valido = true;submit(); geraCupom(); analyticsEventListener('Preencheu o formulário do game', 'Formulário do game', 'Usuário preencheu o formulário do game com informações válidas. ');}return valido;}};
+
+    function validar2() {var valido = false;with(document.form) {if(nome.value.length == 0){valido = false;alertify.alert ('Por favor, preencha o campo nome para que possamos entrar em contato com você.');}else if(email.value.length == 0) {valido = false;alertify.alert ('Por favor, preencha o campo email para que possamos entrar em contato com você.');}
+
+    else if(codempresa.value.length == 0) {valido = false;alertify.alert ('Por favor, escolha uma concessionária.');}
+
+    else if(telefone.value.length == 0) {valido = false;alertify.alert ('Por favor, preencha o campo DDD + Telefone para que possamos entrar em contato com você.');}
+
+    else if(mensagem.value.length == 0) {valido = false;alertify.alert ('Por favor, preencha o campo CPF.');}
+
+    else {valido = true;submit();}return valido;}};
+
+    
+
+    console.info("CUPOM.JS CARREGADO");
+    dadosUser = {
+        nomeUser: 0,
+        emailUser: 0,
+        telefoneUser: 0,
+        cpfUser: 0,
+        dataDeEmissaoCupomString: 0
+    };
+
+    moment.lang("pt");
+
+    function geraCupom(){
+        dadosUser.nomeUser = $("input:text[id=nome]").val();
+        dadosUser.emailUser = $("input:text[id=email]").val();
+        dadosUser.telefoneUser = $("input:text[id=telefone]").val();
+        dadosUser.cpfUser = $("input:text[id=mensagem]").val();
+        dadosUser.dataDeEmissaoCupom = moment().format('MMMM Do YYYY, h:mm:ss a');
+        
+        dadosUserConcat = "- & -"+dadosUser.nomeUser+"- & -"+dadosUser.emailUser+"- & -"+dadosUser.telefoneUser+"- & -"+dadosUser.cpfUser+"- & -"+dadosUser.dataDeEmissaoCupom+"- & -";
+
+        setCookie("dadosUsuario", dadosUserConcat, "1");
+        openWindow();
+
+        console.log(dadosUser);
+    };
+
+    function openWindow() {
+        window.open('cupom.html', 'popUpWindow','height=620, width=650, left=300, top=100, resizable=no, scrollbars=yes, toolbar=no, menubar=no, location=no, directories=no, status=yes');
+    };
+
+    function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname+"="+cvalue+"; "+expires;
+    };
+</script> 
+
+<!-- MÁSCARA DE VALIDACAO -->
+    <script type="text/javascript">
+        (function($) {
+        $(function() {
+        $('.mask-fone').mask('(99) 9999-9999' ) ; //telefone
+        });
+        })(jQuery);
+
+        (function($) {
+        $(function() {
+        $('.mask-cpf').mask('999.999.999-99' ) ; //cpf
+        });
+        })(jQuery);
+    </script> 
+
+    <script>
+        $(".btn-regulamento, .regulamento").mouseenter(function(){
+            $(".btn-regulamento").css({width: "300px"});
+            $(".regulamento").css({display: "block", opacity: "1"});
+        });
+        $(".btn-regulamento, .regulamento").mouseleave(function(){
+            $(".btn-regulamento").css({width: "180px"});
+            $(".regulamento").css({display: "none", opacity: "0"});
+        });
+    </script>
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 986231296;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/986231296/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+
+    </body>
+</html>

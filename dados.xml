@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ofertas>
+	<carro id-carro="CRUZE SEDAN">
+		<img-big>img/ofertas/cruze_big.png</img-big>
+		<motorizacao>1.8</motorizacao>
+		<versao>LT</versao>
+		<ano>14/14</ano>
+		<texto-de>A CHEVROLET</texto-de>
+		<preco-de>PAGA O IPI PARA VOCÊ</preco-de>
+		<texto-por>E AINDA</texto-por>
+		<preco-por>COM TAXA ZERO</preco-por>
+		<dotz>DZ 5.000</dotz>
+		<opcionais>
+			<opc>ABS + 4 AIRBAGS</opc>
+			<opc>DIREÇÃO ELÉTRICA</opc>
+			<opc>ARO 17"</opc>
+			<opc>CONTROLE DE TRAÇÃO E ESTABILIDADE</opc>
+			<opc>COMANDO DE SOM NO VOLANTE</opc>
+			<opc>RETROVISORES ELÉTRICOS</opc>
+			<opc>TAXA 0%</opc>
+		</opcionais>
+		<juridico>Consulte Condições. Imagem ilustrativa. Oferta válida até 31/08/2014 ou enquanto durar o estoque.</juridico>
+	</carro>
+	<carro id-carro="CLASSIC">
+		<img-big>img/ofertas/classic_big.png</img-big>
+		<motorizacao>1.0</motorizacao>
+		<versao>LS</versao>
+		<ano>14/15</ano>
+		<texto-de>A CHEVROLET</texto-de>
+		<preco-de>PAGA O IPI PARA VOCÊ</preco-de>
+		<texto-por>E AINDA</texto-por>
+		<preco-por>COM TAXA ZERO</preco-por>
+		<dotz>DZ 5.000</dotz>
+		<opcionais>
+			<opc>AR CONDICIONADO</opc>
+			<opc>DIREÇÃO HIDRÁULICA</opc>
+			<opc>AIRBAG</opc>
+			<opc>ABS</opc>
+			<opc>VIDROS ELÉTRICOS</opc>
+			<opc>TRAVAS ELÉTRICAS</opc>
+		</opcionais>
+		<juridico>Consulte Condições. Imagem ilustrativa. Oferta válida até 31/08/2014 ou enquanto durar o estoque.</juridico>
+	</carro>
+	<carro id-carro="ONIX">
+		<img-big>img/ofertas/onix_big.png</img-big>
+		<motorizacao>1.0</motorizacao>
+		<versao>LS</versao>
+		<ano>14/15</ano>
+		<texto-de>A CHEVROLET</texto-de>
+		<preco-de>PAGA O IPI PARA VOCÊ</preco-de>
+		<texto-por>E AINDA</texto-por>
+		<preco-por>COM TAXA ZERO</preco-por>
+		<dotz>DZ 2.000</dotz>
+		<opcionais>
+			<opc>AIRBAG</opc>
+			<opc>ABS</opc>
+			<opc>DIREÇÃO HIDRÁULICA</opc>
+			<opc>AJUSTE DE ALTURA DO BANCO E VOLANTE</opc>
+			<opc>3 ANOS DE GARANTIA</opc>
+		</opcionais>
+		<juridico>Consulte Condições. Imagem ilustrativa. Oferta válida até 31/08/2014 ou enquanto durar o estoque.</juridico>
+	</carro>
+	<carro id-carro="PRISMA">
+		<img-big>img/ofertas/prisma_big.png</img-big>
+		<motorizacao>1.0</motorizacao>
+		<versao>LT</versao>
+		<ano>14/15</ano>
+		<texto-de>A CHEVROLET</texto-de>
+		<preco-de>PAGA O IPI PARA VOCÊ</preco-de>
+		<texto-por>E AINDA</texto-por>
+		<preco-por>COM TAXA ZERO</preco-por>
+		<dotz>DZ 10.000</dotz>
+		<opcionais>
+			<opc>AR CONDICIONADO</opc>
+			<opc>DIREÇÃO HIDRÁULICA</opc>
+			<opc>AIRBAG</opc>
+			<opc>ABS</opc>
+			<opc>VIDROS ELÉTRICOS</opc>
+			<opc>SENSOR DE ESTACIONAMENTO</opc>
+			<opc>TAXA 0%</opc>
+		</opcionais>
+		<juridico>Consulte Condições. Imagem ilustrativa. Oferta válida até 31/08/2014 ou enquanto durar o estoque.</juridico>
+	</carro>
+	<carro id-carro="COBALT">
+		<img-big>img/ofertas/cobalt_big.png</img-big>
+		<motorizacao>1.8</motorizacao>
+		<versao>LTZ</versao>
+		<ano>14/15</ano>
+		<texto-de>A CHEVROLET</texto-de>
+		<preco-de>PAGA O IPI PARA VOCÊ</preco-de>
+		<texto-por>E AINDA</texto-por>
+		<preco-por>COM TAXA ZERO</preco-por>
+		<dotz>DZ 5.000</dotz>
+		<opcionais>
+			<opc>AR CONDICIONADO</opc>
+			<opc>DIREÇÃO HIDRÁULICA</opc>
+			<opc>AIRBAG + ABS</opc>
+			<opc>FAROL DE NEBLINA</opc>
+			<opc>RODAS DE LIGA LEVE</opc>
+			<opc>SISTEMA DE SOM MY LINK</opc>
+		</opcionais>
+		<juridico>Consulte Condições. Imagem ilustrativa. Oferta válida até 31/08/2014 ou enquanto durar o estoque.</juridico>
+	</carro>
+	<carro id-carro="S10">
+		<img-big>img/ofertas/s10_big.png</img-big>
+		<motorizacao>2.4</motorizacao>
+		<versao>LTZ FLEX</versao>
+		<ano>14/14</ano>
+		<texto-de>A CHEVROLET</texto-de>
+		<preco-de>PAGA O IPI PARA VOCÊ</preco-de>
+		<texto-por>E AINDA</texto-por>
+		<preco-por>COM TAXA ZERO</preco-por>
+		<dotz>DZ 5.000</dotz>
+		<opcionais>
+			<opc>AIRBAG + ABS</opc>
+			<opc>RODAS ARO 17"</opc>
+			<opc>MY LINK COM COMANDO DE VOZ</opc>
+			<opc>AR CONDICIONADO DIGITAL</opc>
+			<opc>BANCOS EM COURO</opc>
+			<opc>ESTRIBOS LATERAIS</opc>
+		</opcionais>
+		<juridico>Consulte Condições. Imagem ilustrativa. Oferta válida até 31/08/2014 ou enquanto durar o estoque.</juridico>
+	</carro>
+</ofertas>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="162px" viewBox="0 0 257.25 162" enable-background="new 0 0 257.25 162" xml:space="preserve">
+<g id="setas">
+	<g id="_x32_cima">
+		<polygon fill="#00427e" points="118.33,50.049 128.783,31.946 139.234,50.049 		"/>
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M156.75,3.03c5.5,0,10,4.5,10,10v55.935c0,5.5-4.5,10-10,10h-55.936
+				c-5.5,0-10-4.5-10-10V13.03c0-5.5,4.5-10,10-10H156.75z"/>
+		</g>
+		<animate id="animation5"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".1s"
+	             begin="1s;animation8.end" />
+	    <animate id="animation6"
+	             attributeName="opacity"
+	             from="0" to="0" dur=".5s" 
+	             begin="animation5.end" />
+	    <animate id="animation7"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".2s" 
+	             begin="animation6.end" />
+	    <animate id="animation8"
+	             attributeName="opacity"
+	             from="1" to="1" dur="1.5s" 
+	             begin="animation7.end" />
+	</g>
+	<g id="_x32_esquerda">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M78.914,149.961c0,5.5-4.5,10-10,10H12.98c-5.5,0-10-4.5-10-10V94.025
+				c0-5.5,4.5-10,10-10h55.934c5.5,0,10,4.5,10,10V149.961z"/>
+		</g>
+		<polygon fill="#00427e" points="49.999,132.445 31.896,121.993 49.999,111.542 		"/>
+		<animate id="animation1"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".1s"
+	             begin=".5s;animation4.end" />
+	    <animate id="animation2"
+	             attributeName="opacity"
+	             from="0" to="0" dur=".5s" 
+	             begin="animation1.end" />
+	    <animate id="animation3"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".2s" 
+	             begin="animation2.end" />
+	    <animate id="animation4"
+	             attributeName="opacity"
+	             from="1" to="1" dur="1.5s" 
+	             begin="animation3.end" />
+	</g>
+	<g id="_x32_direita">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M254.584,149.961c0,5.5-4.5,10-10,10H188.65c-5.5,0-10-4.5-10-10V94.025
+				c0-5.5,4.5-10,10-10h55.934c5.5,0,10,4.5,10,10V149.961z"/>
+		</g>
+		<polygon fill="#00427e" points="207.566,111.542 225.668,121.994 207.566,132.445 		"/>
+		<animate id="animation9"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".1s"
+	             begin="1.5s;animation12.end" />
+	    <animate id="animation10"
+	             attributeName="opacity"
+	             from="0" to="0" dur=".5s" 
+	             begin="animation9.end" />
+	    <animate id="animation11"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".2s" 
+	             begin="animation10.end" />
+	    <animate id="animation12"
+	             attributeName="opacity"
+	             from="1" to="1" dur="1.5s" 
+	             begin="animation11.end" />
+	</g>
+	<g id="_x32_baixo">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M166.75,149.961c0,5.5-4.5,10-10,10h-55.936c-5.5,0-10-4.5-10-10V94.025
+				c0-5.5,4.5-10,10-10h55.936c5.5,0,10,4.5,10,10V149.961z"/>
+		</g>
+		<polygon fill="#00427e" points="139.234,112.942 128.781,131.045 118.33,112.942 		"/>
+		<animate id="animation13"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".1s"
+	             begin="2s;animation16.end" />
+	    <animate id="animation14"
+	             attributeName="opacity"
+	             from="0" to="0" dur=".5s" 
+	             begin="animation13.end" />
+	    <animate id="animation15"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".2s" 
+	             begin="animation14.end" />
+	    <animate id="animation16"
+	             attributeName="opacity"
+	             from="1" to="1" dur="1.5s" 
+	             begin="animation15.end" />
+	</g>
+</g>
+
+<g id="setas-pressionadas">
+	<g id="esquerda" opacity="0">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M78.915,149.961c0,5.5-4.5,10-10,10H12.98c-5.5,0-10-4.5-10-10V94.025
+				c0-5.5,4.5-10,10-10h55.935c5.5,0,10,4.5,10,10V149.961z"/>
+		</g>
+		<path fill="#00427e" d="M68.915,84.026H12.98c-5.5,0-10,4.5-10,10v55.936c0,5.5,4.5,10,10,10h55.935c5.5,0,10-4.5,10-10V94.025
+			C78.915,88.526,74.415,84.026,68.915,84.026z M49.999,132.445l-18.103-10.452l18.103-10.451V132.445z"/>
+		<animate id="animation1"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".1s"
+	             begin=".5s;animation4.end" />
+	    <animate id="animation2"
+	             attributeName="opacity"
+	             from="1" to="1" dur=".5s" 
+	             begin="animation1.end" />
+	    <animate id="animation3"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".2s" 
+	             begin="animation2.end" />
+	    <animate id="animation4"
+	             attributeName="opacity"
+	             from="0" to="0" dur="1.5s" 
+	             begin="animation3.end" />
+	</g>
+	<g id="cima" opacity="0">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M156.75,3.03c5.5,0,10,4.5,10,10v55.935c0,5.5-4.5,10-10,10h-55.935
+				c-5.5,0-10-4.5-10-10V13.03c0-5.5,4.5-10,10-10H156.75z"/>
+		</g>
+		<path fill="#00427e" d="M156.75,3.03h-55.935c-5.5,0-10,4.5-10,10v55.935c0,5.5,4.5,10,10,10h55.935c5.5,0,10-4.5,10-10V13.03
+			C166.75,7.53,162.25,3.03,156.75,3.03z M118.331,50.049l10.452-18.103l10.451,18.103H118.331z"/>
+		<animate id="animation5"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".1s"
+	             begin="1s;animation8.end" />
+	    <animate id="animation6"
+	             attributeName="opacity"
+	             from="1" to="1" dur=".5s" 
+	             begin="animation5.end" />
+	    <animate id="animation7"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".2s" 
+	             begin="animation6.end" />
+	    <animate id="animation8"
+	             attributeName="opacity"
+	             from="0" to="0" dur="1.5s" 
+	             begin="animation7.end" />
+	</g>
+	<g id="direita" opacity="0">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M254.585,149.961c0,5.5-4.5,10-10,10H188.65c-5.5,0-10-4.5-10-10V94.025
+				c0-5.5,4.5-10,10-10h55.935c5.5,0,10,4.5,10,10V149.961z"/>
+		</g>
+		<path fill="#00427e" d="M244.585,84.026H188.65c-5.5,0-10,4.5-10,10v55.936c0,5.5,4.5,10,10,10h55.935c5.5,0,10-4.5,10-10V94.025
+			C254.585,88.526,250.085,84.026,244.585,84.026z M207.566,132.445v-20.903l18.103,10.452L207.566,132.445z"/>
+		<animate id="animation9"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".1s"
+	             begin="1.5s;animation12.end" />
+	    <animate id="animation10"
+	             attributeName="opacity"
+	             from="1" to="1" dur=".5s" 
+	             begin="animation9.end" />
+	    <animate id="animation11"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".2s" 
+	             begin="animation10.end" />
+	    <animate id="animation12"
+	             attributeName="opacity"
+	             from="0" to="0" dur="1.5s" 
+	             begin="animation11.end" />
+	</g>
+	<g id="baixo" opacity="0">
+		<g>
+			<path fill="none" stroke="#00427e" stroke-width="2" d="M166.75,149.961c0,5.5-4.5,10-10,10h-55.935c-5.5,0-10-4.5-10-10V94.025
+				c0-5.5,4.5-10,10-10h55.935c5.5,0,10,4.5,10,10V149.961z"/>
+		</g>
+		<path fill="#00427e" d="M156.75,84.026h-55.935c-5.5,0-10,4.5-10,10v55.936c0,5.5,4.5,10,10,10h55.935c5.5,0,10-4.5,10-10V94.025
+			C166.75,88.526,162.25,84.026,156.75,84.026z M128.782,131.045l-10.451-18.103h20.903L128.782,131.045z"/>
+		<animate id="animation13"
+	             attributeName="opacity"
+	             from="0" to="1" dur=".1s"
+	             begin="2s;animation16.end" />
+	    <animate id="animation14"
+	             attributeName="opacity"
+	             from="1" to="1" dur=".5s" 
+	             begin="animation13.end" />
+	    <animate id="animation15"
+	             attributeName="opacity"
+	             from="1" to="0" dur=".2s" 
+	             begin="animation14.end" />
+	    <animate id="animation16"
+	             attributeName="opacity"
+	             from="0" to="0" dur="1.5s" 
+	             begin="animation15.end" />
+	</g>
+</g>
+
+</svg>
