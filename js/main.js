@@ -671,10 +671,4 @@ $(function(){
 
 });
 
-// ANALYTICS EVENT ORIGIN
-function analyticsEventListener(eventName, eventDescription, eventNotification){
-	var d = moment().lang('pt').format('MMMM Do YYYY, h:mm:ss a');
-	ga('send', 'event', eventName, eventDescription, ''+eventNotification+' ('+d+')');
-}
-
 });

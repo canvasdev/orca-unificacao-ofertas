@@ -25,6 +25,8 @@ $(document).ready(function() {
 			var thisVar = $(this);
 			carroUsuario = this.getAttribute("carro");
 
+			analyticsEventListener('Navegou entre as ofertas', carroUsuario, 'Usuário navegou entre as ofertas da página.');
+
 			$(".oferta-cont").not(this).css({backgroundColor: "transparent"});
 			$(this).css({backgroundColor: "#004D92"});
 			
@@ -108,6 +110,7 @@ $(".form-modal").hide();
 	$(".cta").click(function() {
 		$("#form-append").html('<form onSubmit="return validar2();"  id="form-ofertas" name="form" method="post" action="http://www.grupoocp.com.br/azzurra/"><input type="hidden" name="origem" id="origem" style="width:273px; color:#000" value="Hotsite" /><input type="hidden" name="veiculo" id="veiculo" style="width:273px; color:#000" value="'+carroUsuario+'" /><input type="hidden" name="campanha" id="campanha" style="width:273px; color:#000" value="Jorlan Unificação" /><input type="hidden" name="opcao" id="opcao" style="width:273px; color:#000" value="A" /><input type="hidden" name="linkResposta" id="linkResposta" value="http://jorlan.com.br/novajorlan/contatoenviado.html" /><input type="hidden"  name="codempresa" id="codempresa" name="codempresa" value="4" style=" height:25px; color:#999;"><div class="inputname"><input  type="text" name="nome" id="nome" size="6" maxlenght="6" placeholder="Qual é o seu nome?" style="height:25px; color:#3b1616; background-color: #CE9767"  /></div><div class="inputemail"><input  type="text" name="email" id="email" placeholder="Qual é o seu email?" style=" height:25px; color:#3b1616; background-color: #CE9767"  /></div><div class="inputtel"><input  type="text" name="telefone" class="mask-fone" id="telefone" placeholder="Qual é o seu telefone?" style=" height:25px; color:#3b1616; background-color: #CE9767"/></div><div class="inputtxtarea"><input style=" color:#3b1616; height: 25px; background-color: #CE9767" name="mensagem" id="mensagem" placeholder="Mensagem"  /><div class="inputall"><select name="codempresa" id="codempresa" name="codempresa" style="width: 362px; margin-top: 10px; color:#848484;"><option value="4">Escolha uma concessionária:</option><option value="4">Jorlan Pedro II</option><option value="8">Jorlan Via Expressa</option><option value="2">Jorlan Belvedere</option></select></div><input name="charset" type="hidden" value="iso-8859-1" /><input type="submit" name="enviar" value="QUERO SABER MAIS" class="btn" /></div></form>');
 		$(".form-modal").fadeIn();
+		analyticsEventListener('Clicou no CTA das ofertas', carroUsuario, 'Usuário clicou no CTA. Formulário aberto.');
 	});
 
 	$("#fechar, .form-modal-cor").click(function() {
