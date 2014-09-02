@@ -341,7 +341,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e58400', end
 
 /* FORMULARIO */
 
-.form-modal{width: 100%; height: 100%; position: fixed; z-index: 100}
+.form-modal{width: 100%; height: 100%; position: fixed; z-index: 100; display: none}
 .form-modal-cor{width: 100%; height: 100%; position: absolute; background-color: #fff; opacity: 0.7}
 
 .form-container{width: 400px; height: 263px; position: absolute; top: 50%; left: 50%; margin-top: -120px; margin-left: -200px; background-color: #3b1616; border: 4px solid #CE9767; border-radius: 10px;}

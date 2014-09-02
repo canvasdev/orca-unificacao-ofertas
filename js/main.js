@@ -1,8 +1,24 @@
 $(document).ready(function() {
 
-// setTimeout(function() {
-// 	$(".tela-de-carregamento").animate({opacity: '0'}, 600);
-// }, 2000);
+// MUDANÇA NA DIFICULDADE DO GAME
+
+mudaDificuldade(1);
+level = 1;
+function mudaDificuldade(level){
+	if (level == 1) {
+		level = 1;
+		$(".carro, .moto").css({display: "none"});
+	};
+	if (level == 2) {
+		level = 2;
+		$(".carro").css({display: "block"});
+	};
+	if (level == 3) {
+		level = 3;
+		$(".moto").css({display: "block"});
+	};
+}
+
 
 TECLA = {
   W: 87,
@@ -423,20 +439,25 @@ if(protecaoPersonagem == false){
 		perdeVida();};
 	if (personagemXRight >= caminhao2Xleft && personagemXleft <= caminhao2XRight && personagemYBottom <= caminhao2YTop && personagemYTop >= caminhao2YBottom) {
 		perdeVida();};
-	if (personagemXRight >= carro1Xleft && personagemXleft <= carro1XRight && personagemYBottom <= carro1YTop && personagemYTop >= carro1YBottom) {
-		perdeVida();};
-	if (personagemXRight >= carro2Xleft && personagemXleft <= carro2XRight && personagemYBottom <= carro2YTop && personagemYTop >= carro2YBottom) {
-		perdeVida();};
-	if (personagemXRight >= carro3Xleft && personagemXleft <= carro3XRight && personagemYBottom <= carro3YTop && personagemYTop >= carro3YBottom) {
-		perdeVida();};
-	if (personagemXRight >= moto1Xleft && personagemXleft <= moto1XRight && personagemYBottom <= moto1YTop && personagemYTop >= moto1YBottom) {
-		perdeVida();};
-	if (personagemXRight >= moto2Xleft && personagemXleft <= moto2XRight && personagemYBottom <= moto2YTop && personagemYTop >= moto2YBottom) {
-		perdeVida();};
-	if (personagemXRight >= moto3Xleft && personagemXleft <= moto3XRight && personagemYBottom <= moto3YTop && personagemYTop >= moto3YBottom) {
-		perdeVida();};
-	if (personagemXRight >= moto4Xleft && personagemXleft <= moto4XRight && personagemYBottom <= moto4YTop && personagemYTop >= moto4YBottom) {
-		perdeVida();};
+		if (level == 2 || level == 3) {
+			if (personagemXRight >= carro1Xleft && personagemXleft <= carro1XRight && personagemYBottom <= carro1YTop && personagemYTop >= carro1YBottom) {
+			perdeVida();};
+			if (personagemXRight >= carro2Xleft && personagemXleft <= carro2XRight && personagemYBottom <= carro2YTop && personagemYTop >= carro2YBottom) {
+				perdeVida();};
+			if (personagemXRight >= carro3Xleft && personagemXleft <= carro3XRight && personagemYBottom <= carro3YTop && personagemYTop >= carro3YBottom) {
+				perdeVida();};
+			if (level == 3) {
+				if (personagemXRight >= moto1Xleft && personagemXleft <= moto1XRight && personagemYBottom <= moto1YTop && personagemYTop >= moto1YBottom) {
+					perdeVida();};
+				if (personagemXRight >= moto2Xleft && personagemXleft <= moto2XRight && personagemYBottom <= moto2YTop && personagemYTop >= moto2YBottom) {
+					perdeVida();};
+				if (personagemXRight >= moto3Xleft && personagemXleft <= moto3XRight && personagemYBottom <= moto3YTop && personagemYTop >= moto3YBottom) {
+					perdeVida();};
+				if (personagemXRight >= moto4Xleft && personagemXleft <= moto4XRight && personagemYBottom <= moto4YTop && personagemYTop >= moto4YBottom) {
+					perdeVida();};
+			};
+		};
+	
 
 if (concessionariaAberta == 1) {
 	if (personagemXRight >= conces1Xleft && personagemXleft <= conces1XRight && personagemYBottom <= conces1YTop && personagemYTop >= conces1YBottom) {
@@ -464,6 +485,7 @@ if (concessionariaAberta == 1) {
 		concessionariaAberta = 2;
 		entrarConcessionaria('PRIMEIRA', 'JORLAN BELVEDERE');
     	analyticsEventListener('Etapa do game', '1ª fase (Completa)', 'Usuário levou a primeira gêmea para a concessionária. ');
+    	mudaDificuldade(level = 2);
 	};
 };
 if (concessionariaAberta == 2) {
@@ -492,6 +514,7 @@ if (concessionariaAberta == 2) {
 		}, 1200);
 		entrarConcessionaria('SEGUNDA', 'JORLAN VIA EXPRESSA');
     	analyticsEventListener('Etapa do game', '2ª fase (Completa)', 'Usuário levou a segunda gêmea para a concessionária. ');
+    	mudaDificuldade(level = 3);
 	};
 };
 if (concessionariaAberta == 3) {
@@ -591,6 +614,7 @@ function resetGame(){
 	numeroDeVidas = 5;
 	protecaoPersonagem = false;
 	concessionariaAberta = 1;
+	level = 1;
 }
 
 $("#form").hide();
